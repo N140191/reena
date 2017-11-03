@@ -1,10 +1,4 @@
 export default {
-  formatCurrency: (currency) => {
-	  return Number(currency).toLocaleString();
-  },
-  formatDate: (date) => {
-    var myDate = new Date(date);
-	var myDateString = (padZero(myDate.getDate()))+ '-' + (padZero(myDate.getMonth()+1))+ '-' +  myDate.getFullYear();
-	return myDateString;
-  },
+  formatCurrency: () => {}, // TODO: Format currency with comma separated => 5,000,000
+  formatDate: () => {}, // TODO: Format date to dd-mm-yyyy
 };
